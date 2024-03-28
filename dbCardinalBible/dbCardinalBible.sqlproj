@@ -124,6 +124,7 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="Security\" />
+    <Folder Include="sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\strongs.sql">
@@ -147,5 +148,8 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="Security\Permissions.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="sql\Script.seed.sql" />
   </ItemGroup>
 </Project>
